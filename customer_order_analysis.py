@@ -4,7 +4,7 @@ import numpy as np
 # so that every time we run the code we get same random data
 np.random.seed(2)
 
-# creating fake order dataset
+# creating order dataset
 Data = {
     # creating order ids from 2001 to 2030
     "Order_Id": np.arange(2001, 2031),
@@ -140,3 +140,4 @@ Customer_spent = df.groupby("Customer_Name")["Total_Amount"].sum()
 
 print("\nCustomer spending ranking")
 print(Customer_spent.sort_values(ascending=False))
+
